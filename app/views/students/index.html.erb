@@ -20,7 +20,7 @@
         <td><%=student.register_number %></td>
         <td><%=student.status == 1 ? "ativo" : "inativo"  %></td>
         <td><%= link_to 'editar', edit_student_path(student) %></td>
-        <td><%= link_to 'deletar', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'deletar', student, method: :delete, data: { confirm: 'quer mesmo deletar?' } %></td>
       </tr>
     <% end %>
   </tbody>
