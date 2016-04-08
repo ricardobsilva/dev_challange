@@ -13,10 +13,12 @@
 
   <div class="actions">
     <%= f.label 'estudante'%>
-    <%= f.collection_select(:student_id, @students, :id, :name)  %>
+    <%= f.collection_select(:student_id, @students, :id, :name , {prompt: "escolha um aluno"} , {class: "form-control"} ) %>
     <%= f.label 'curso'%>
-    <%= f.collection_select(:course_id, @courses, :id, :name) %>
+    <%= f.collection_select(:course_id, @courses, :id, :name , {prompt: "escolha um curso"} , {class: "form-control"} )  %>
     <%= f.hidden_field :entry_at , :value => Time.now%>
-    <%= f.submit %>
+    </br>
+    <%= f.submit "cadastrar", class: 'btn btn-primary' %>
   </div>
+  </br>
 <% end %>
