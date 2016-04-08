@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Students</h1>
+<h1>Estudantes</h1>
 
-<table>
+<%= link_to 'novo aluno', new_student_path, class: "btn btn-primary btn-xs pull-right" %>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>nome</th>
@@ -28,4 +29,3 @@
 
 <br>
 
-<%= link_to 'New Student', new_student_path %>

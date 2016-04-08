@@ -1,10 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Classrooms</h1>
+<h1>Matrículas</h1>
 
-<table>
+<%= link_to 'fazer matricula', new_classroom_path , class: "btn btn-primary btn-xs pull-right"%>
+<table class="table table-striped">
   <thead>
     <tr>
+      <th>aluno</th>
+      <th>curso</th>
+      <th>data da matrícula</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,9 +16,11 @@
   <tbody>
     <% @classrooms.each do |classroom| %>
       <tr>
-        <td><%= link_to 'Show', classroom %></td>
-        <td><%= link_to 'Edit', edit_classroom_path(classroom) %></td>
-        <td><%= link_to 'Destroy', classroom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= classroom.student.name %></td>
+        <td><%= classroom.course.name%></td>
+        <td><%= classroom.entry_at %></td>
+        <td><%= link_to 'editar', edit_classroom_path(classroom) %></td>
+        <td><%= link_to 'deletar', classroom, method: :delete, data: { confirm: 'quer mesmo deletar?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +28,3 @@
 
 <br>
 
-<%= link_to 'New Classroom', new_classroom_path %>
