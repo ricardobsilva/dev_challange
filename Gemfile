@@ -38,7 +38,7 @@ group :development, :test do
   gem 'byebug'
 
   # test suite
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', require:  false
   gem 'faker'
   gem 'pry-rails'
   gem 'rspec-rails'
