@@ -362,10 +362,39 @@
         1,
         null,
         1,
+        2,
+        2,
+        2,
+        2,
+        null,
         1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/home/ricardo/open-source/test_challenge/app/models/course.rb": [
+        1,
+        1,
         1,
         null
       ],
@@ -411,6 +440,6 @@
         null
       ]
     },
-    "timestamp": 1460076455
+    "timestamp": 1460077186
   }
 }
