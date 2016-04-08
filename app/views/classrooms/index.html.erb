@@ -18,7 +18,7 @@
       <tr>
         <td><%= classroom.student.name %></td>
         <td><%= classroom.course.name%></td>
-        <td><%= classroom.entry_at %></td>
+        <td><%= classroom.entry_at.strftime("%d %b. %Y %H:%M") %></td>
         <td><%= link_to 'editar', edit_classroom_path(classroom) %></td>
         <td><%= link_to 'deletar', classroom, method: :delete, data: { confirm: 'quer mesmo deletar?' } %></td>
       </tr>
